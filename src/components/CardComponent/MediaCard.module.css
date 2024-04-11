@@ -1,0 +1,24 @@
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cardContainer > div {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.cardTitle {
+  position: relative;
+}
+
+.cardTitle::afer {
+  position: absolute;
+  content: "";
+  top: 100%;
+  width: 120px;
+  height: 3px;
+  background: black;
+  left: 50%;
+  transform: translateX(-50%);
+}

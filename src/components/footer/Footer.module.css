@@ -1,0 +1,12 @@
+.footerColumn {
+  display: flex;
+  gap: 1rem;
+}
+.footerColumn > div {
+  flex: 0 0 40%;
+  max-width: 40%;
+}
+.footerColumn > div:nth-child(2) {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
