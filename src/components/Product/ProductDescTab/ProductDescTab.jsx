@@ -4,7 +4,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-
+import classes from "./ProductDescTab.module.css";
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -49,6 +49,7 @@ export default function ProductDescTab() {
     <Box sx={{ width: "100%" }}>
       <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
         <Tabs
+          className={classes.tab_header}
           value={value}
           onChange={handleChange}
           aria-label="basic tabs example"

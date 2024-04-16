@@ -10,3 +10,6 @@
   flex: 0 0 20%;
   max-width: 20%;
 }
+.newsletter_btn {
+  padding: 5px 15px !important;
+}

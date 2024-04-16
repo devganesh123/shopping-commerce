@@ -8,11 +8,13 @@ const Btn = ({
   color = "common.white",
   width = "auto",
   height = "auto",
+  ...buttonProps
 }) => {
   return (
     <Button
       size={size}
       variant="outlined"
+      {...buttonProps}
       sx={{
         color: color,
         bgcolor: bgColor,

@@ -54,7 +54,7 @@ const Footer = () => {
                 variant="outlined"
                 sx={{ borderColor: "#fff" }}
               />
-              <Btn bgColor="common.white" color="common.black" height="55px">
+              <Btn bgColor="common.white" color="common.black" height="55px" className={classes.newsletter_btn}>
                 Join
               </Btn>
             </Box>

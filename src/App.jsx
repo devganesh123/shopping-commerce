@@ -1,5 +1,7 @@
+import { useState } from "react";
 import "./App.css";
 import { DataContext } from "./context/DataContext";
+
 import Home from "./pages/Home";
 import Shop from "./pages/Shop";
 import Root from "./components/Root";
@@ -14,6 +16,8 @@ import Mens from "./pages/Mens";
 import Womens from "./pages/Womens";
 import Kids from "./pages/Kids";
 import ProductDetail from "./pages/ProductDetail";
+import CartProvider from "./context/CartProvider";
+import Cart from "./pages/Cart";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -24,6 +28,7 @@ const router = createBrowserRouter(
       <Route path="/Womens" element={<Womens />} />
       <Route path="/Kids" element={<Kids />} />
       <Route path="/products/:id" element={<ProductDetail />} />
+      <Route path="/cart" element={<Cart />} />
     </Route>
   )
 );
@@ -32,7 +37,9 @@ function App() {
   return (
     <>
       <DataContext>
-        <RouterProvider router={router}></RouterProvider>
+        <CartProvider>
+          <RouterProvider router={router}></RouterProvider>
+        </CartProvider>
       </DataContext>
     </>
   );

@@ -15,3 +15,17 @@ a {
   text-decoration: none;
   color: inherit;
 }
+form label {
+  color: #ffffff !important;
+}
+fieldset {
+  color: #ffffff !important;
+
+  border-color: #ffffff !important;
+}
+.Mui-selected {
+  color: #000 !important;
+}
+.css-vmhglf-MuiTabs-root {
+  border-right: 0 !important;
+}

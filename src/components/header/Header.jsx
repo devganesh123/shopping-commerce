@@ -8,6 +8,7 @@ import IconButton from "@mui/material/IconButton";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import { Link } from "react-router-dom";
+import zIndex from "@mui/material/styles/zIndex";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -67,6 +68,10 @@ const Header = () => {
         bgcolor: "secondary.dark",
         color: "common.white",
         py: ".5rem",
+        position: "sticky",
+        top: 0,
+        zIndex: 9,
+        boxShadow: " 0px 0px 1px 1px #5d9aa6",
       }}
     >
       <Container>
@@ -116,11 +121,13 @@ const Header = () => {
                 </IconButton>
               </Box>
               <Box>
-                <IconButton aria-label="cart">
-                  <StyledBadge badgeContent={0} color="secondary">
-                    <ShoppingCartIcon sx={{ color: "common.white" }} />
-                  </StyledBadge>
-                </IconButton>
+                <Link to={"/cart"}>
+                  <IconButton aria-label="cart">
+                    <StyledBadge badgeContent={0} color="secondary">
+                      <ShoppingCartIcon sx={{ color: "common.white" }} />
+                    </StyledBadge>
+                  </IconButton>
+                </Link>
               </Box>
             </Box>
             {/* <Search>

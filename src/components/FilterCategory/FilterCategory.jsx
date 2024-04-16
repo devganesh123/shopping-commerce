@@ -9,7 +9,6 @@ const FilterCategory = ({ title, categoryName }) => {
   let filteredProducts = productsData.filter(
     (item) => item.category === categoryName
   );
-  console.log(filteredProducts);
 
   return (
     <div>

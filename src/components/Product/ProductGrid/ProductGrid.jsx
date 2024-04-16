@@ -5,7 +5,7 @@ import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import ProductTab from "../ProductTab/ProductTab";
 import ProductContent from "../ProductContent/ProductContent";
-import ProductDescTab from "../ProductDescTab";
+import ProductDescTab from "../ProductDescTab/ProductDescTab";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -16,7 +16,6 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 export default function ProductGrid({ productItem }) {
-  console.log(productItem);
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2}>
