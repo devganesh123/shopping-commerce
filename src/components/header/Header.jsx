@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { styled, alpha } from "@mui/material/styles";
 import { Box, Typography, Button, Container } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
@@ -61,7 +61,21 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
   },
 }));
 
+const getUserNew = JSON.parse(localStorage.getItem("userDetails"));
+
 const Header = () => {
+  const [isUserSignedIn, setIsUserSignedIn] = useState(getUserNew);
+
+  useEffect(() => {
+    const getUser = JSON.parse(localStorage.getItem("userDetails"));
+
+    if (getUser != null && getUser != undefined) {
+      setIsUserSignedIn(getUser);
+    }
+
+    console.log(isUserSignedIn);
+  }, [getUserNew]);
+
   return (
     <Box
       sx={{
@@ -116,7 +130,7 @@ const Header = () => {
                       color: "common.white",
                     }}
                   >
-                    SignIn
+                    {isUserSignedIn && <Link to="sign_in">SignIn</Link>}
                   </Typography>
                 </IconButton>
               </Box>

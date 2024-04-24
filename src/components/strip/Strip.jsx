@@ -25,11 +25,25 @@ const Strip = () => {
           <Box className={classes.stripContent}>
             <Typography
               component="h3"
-              sx={{ fontWeight: "bold", fontSize: "4rem", color: "#23313e" }}
+              sx={{
+                fontWeight: "bold",
+                color: "#23313e",
+                fontSize: {
+                  xs: "1.5rem",
+                  sm: "1.8rem",
+                  md: "2rem",
+                  lg: "4rem",
+                },
+              }}
             >
               FLAT 50% OFF
             </Typography>
-            <Typography sx={{ mb: "1rem", fontSize: "2rem" }}>
+            <Typography sx={{ mb: "1rem", fontSize: {
+                  xs: "1.1rem",
+                  sm: "1.2rem",
+                  md: "1.5rem",
+                  lg: "2rem",
+                }, }}>
               Deals ends in 24 days
             </Typography>
             <Btn>

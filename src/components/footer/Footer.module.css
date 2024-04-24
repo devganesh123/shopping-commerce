@@ -1,6 +1,6 @@
 .footerColumn {
   display: flex;
-  gap: 1rem;
+  flex-wrap: wrap;
 }
 .footerColumn > div {
   flex: 0 0 40%;
@@ -12,4 +12,15 @@
 }
 .newsletter_btn {
   padding: 5px 15px !important;
+}
+
+@media screen and (max-width: 500px) {
+  .footerColumn > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .footerColumn > div:nth-child(2) {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }

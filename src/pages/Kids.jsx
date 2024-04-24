@@ -4,7 +4,10 @@ import FilterCategory from "../components/FilterCategory/FilterCategory";
 const Kids = () => {
   return (
     <>
-      <FilterCategory title="Kids Category" categoryName="kid"></FilterCategory>
+      <FilterCategory
+        title="Kids Category"
+        categoryName="kids"
+      ></FilterCategory>
     </>
   );
 };

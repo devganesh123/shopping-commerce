@@ -26,6 +26,7 @@ const cartReducer = (state, action) => {
 
       updatedItems = [...state.items];
       updatedItems[existingItemIndex] = updatedItem;
+      console.log(updatedItems);
 
       //! check if the previous item quantity is same
       // if (state.items[existingItemIndex].quantity == action.item.quantity) {

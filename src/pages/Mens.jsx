@@ -4,7 +4,7 @@ import FilterCategory from "../components/FilterCategory/FilterCategory";
 const Mens = () => {
   return (
     <>
-      <FilterCategory title="Mens Category" categoryName="men"></FilterCategory>
+      <FilterCategory title="Mens Category" categoryName="mens"></FilterCategory>
     </>
   );
 };

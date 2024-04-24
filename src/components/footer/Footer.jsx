@@ -31,6 +31,7 @@ const Footer = () => {
               display: "flex",
               flexDirection: "column",
               gap: ".5rem",
+              mb:"1rem"
             }}
           >
             <Typography variant="h5" sx={{ fontWeight: "bold" }}>
@@ -42,8 +43,7 @@ const Footer = () => {
             <Typography>Women</Typography>
             <Typography>Kids</Typography>
           </Box>
-
-          <Box>
+          <Box sx={{mb: "1rem"}}>
             <Typography variant="h5" sx={{ fontWeight: "bold", mb: "1rem" }}>
               Newsletter
             </Typography>
@@ -60,7 +60,7 @@ const Footer = () => {
             </Box>
           </Box>
         </Box>
-        <Typography> @2024 copyright reserved</Typography>
+        <Typography > @2024 copyright reserved</Typography>
       </Container>
     </Box>
   );

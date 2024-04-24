@@ -29,3 +29,6 @@ fieldset {
 .css-vmhglf-MuiTabs-root {
   border-right: 0 !important;
 }
+.MuiSnackbarContent-root {
+  background-color: #80ccdc !important;
+}

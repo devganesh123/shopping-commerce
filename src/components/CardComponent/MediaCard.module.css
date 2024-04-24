@@ -6,6 +6,8 @@
 .cardContainer > div {
   flex: 0 0 25%;
   max-width: 25%;
+  display: flex;
+  flex-direction: column;
 }
 
 .cardTitle {
@@ -21,4 +23,24 @@
   background: black;
   left: 50%;
   transform: translateX(-50%);
+}
+
+@media screen and (max-width: 1200px) {
+  .mediaContainer {
+    max-width: 800px;
+  }
+  .cardContainer > div {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cardContainer > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .cardContainer > div > div {
+    margin: auto;
+  }
 }

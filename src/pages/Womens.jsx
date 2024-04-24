@@ -6,7 +6,7 @@ const Womens = () => {
     <>
       <FilterCategory
         title="Womens Category"
-        categoryName="women"
+        categoryName="womens"
       ></FilterCategory>
     </>
   );

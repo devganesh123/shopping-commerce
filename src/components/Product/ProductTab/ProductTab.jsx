@@ -77,7 +77,7 @@ export default function ProductTab({ productItem }) {
 
       {productImages.map((src, i) => (
         <TabPanel value={value} index={i} key={i}>
-          <img src={src} />
+          <img src={src} style={{ width: "100%" }} />
         </TabPanel>
       ))}
     </Box>
